@@ -255,6 +255,8 @@ void FragDecoderInit( uint16_t fragNb, uint8_t fragSize, uint8_t *file, uint32_t
     FragDecoder.FragSize = fragSize;                            // number of byte on a row
     FragDecoder.Status.FragNbLastRx = 0;
     FragDecoder.Status.FragNbLost = 0;
+    FragDecoder.Status.FragNbRx = 0;
+    FragDecoder.Status.MatrixError = 0;
     FragDecoder.M2BLine = 0;
 
     // Initialize missing fragments index array
